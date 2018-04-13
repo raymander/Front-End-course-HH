@@ -1,0 +1,27 @@
+body {
+ background-image: url(light-veneer.png);
+}
+
+h1, h2 {
+	color: red;
+	text-transform: uppercase;
+}
+
+figcaption {
+	color: darkblue;
+}
+
+section {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	margin-left: 5%;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+}

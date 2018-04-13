@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using jquery</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <div id="txtarea"></div>
+    <input type="text" id="firstname" />
+    <input type="text" id="lastname" />
+
+    <button id="btn">Press me </button>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#btn").click(function() {
+        let s1 = $("#firstname").val();
+        let s2 = $("#lastname").val();
+        let s3 = (s1 + " " + s2);
+        $("#txtarea").html(reverse(s3));
+    })
+    function reverse(s) {
+      var o = '';
+      for (var i = s.length - 1; i >= 0; i--) {
+        o += s[i];
+      }
+      return o;
+    }
+  });
+</script>
+</body>
+</html>

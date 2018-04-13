@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<style>
+		.flex-container {
+			display: flex;
+		}
+
+		.flex-container div {
+			border: 2px solid gray;
+			margin: 10px;
+			padding: 15px;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.flex-container {
+				flex-direction: column;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>Using Flexbox</h1>
+
+	<div class="flex-container">
+		<div>This is a section with some text</div>
+		<div>Another section with the text</div>
+		<div>More text here</div>
+		<div>Even more text here</div>
+		<div>The last section with the text</div>
+	</div>
+</body>
+
+</html>

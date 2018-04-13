@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using jquery</title>  
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class = "card m-5 w-25 text-center">
+    <p>Result = <span id="result"></span></p>
+    </div>
+  
+    <div class = "row">
+  <div class="form-group col-sm-4 m-5">
+    <input type="number" class="form-control" id="number1">
+  </div>
+    
+  <div class="form-group col-sm-4 m-5">
+    <input type="number" class="form-control" id="number2">
+  </div>
+    </div>
+    
+    <div class="btn-group mx-5" role="group">
+     <button type="button" class="btn btn-secondary" id="plus">+</button>
+     <button type="button" class="btn btn-secondary" id="minus">-</button>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  var result = 0;
+     $('#plus').click(function() {
+    var num1 = parseInt($("#number1").val());
+    var num2 = parseInt($("#number2").val());
+    result = num1+num2;
+    $("#result").text(result);
+  });  
+      
+    $('#minus').click(function() {
+    var num1 = parseInt($("#number1").val());
+    var num2 = parseInt($("#number2").val());
+    result = num1-num2;
+    $("#result").text(result);
+  });  
+  })
+</script>
+</body>
+</html>
